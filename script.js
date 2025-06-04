@@ -1,7 +1,7 @@
 document.querySelector('.google-btn').addEventListener('click', function(e) {
   if(/Android|iPhone|iPad/i.test(navigator.userAgent)) {
     e.preventDefault();
-    window.location.href = 'https://search.google.com/local/writereview?placeid=ChIJW9qP4qjK3AcR57jfY7IjWpE';
+    window.location.href = 'https://search.google.com/local/writereview?placeid=ChIJ-bArM43NwAcRCaSbEYZg9Fc';
   }
 });
 
