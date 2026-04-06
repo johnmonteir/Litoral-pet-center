@@ -6,7 +6,7 @@ document.querySelector('.google-btn').addEventListener('click', function(e) {
 });
 
 const floatingBtn = document.createElement('a');
-floatingBtn.href = 'https://wa.me/5585994175022';
+floatingBtn.href = 'https://wa.me/5585996620853';
 floatingBtn.className = 'float-whatsapp';
 floatingBtn.innerHTML = '<i class="fab fa-whatsapp"></i>';
 floatingBtn.target = '_blank';
