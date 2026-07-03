@@ -1,76 +1,176 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
+  <script>document.documentElement.classList.add('has-js');</script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Litoral Pet Center - Clínica Veterinária e Pet Shop</title>
-  <meta name="description" content="Clínica veterinária, banho e tosa, hotelzinho e pet shop em Caucaia. Atendimento 24h para emergências.">
+  <title>Litoral Pet Center - Clínica Veterinária e Pet Shop em Caucaia</title>
+  <meta name="description" content="Clínica veterinária, banho e tosa, hotelzinho e pet shop em Caucaia (Tabuba). Consultas, vacinação, exames, cirurgias e atestado de viagem. Agende pelo WhatsApp.">
+  <meta name="theme-color" content="#2E7D32">
+  <link rel="canonical" href="https://www.litoralpetcenter.com.br/">
+  <!-- IMPORTANTE: troque a URL acima (e as de og:url / og:image / JSON-LD abaixo) pelo domínio real assim que o site for publicado -->
+
+  <!-- Open Graph / compartilhamento em redes sociais e WhatsApp -->
+  <meta property="og:type" content="business.business">
+  <meta property="og:title" content="Litoral Pet Center - Clínica Veterinária e Pet Shop em Caucaia">
+  <meta property="og:description" content="Consultas, vacinação, exames, cirurgias, banho e tosa, hotelzinho e pet shop. Atendimento com hora marcada em Caucaia - CE.">
+  <meta property="og:image" content="https://www.litoralpetcenter.com.br/assets/images/logo.png">
+  <meta property="og:url" content="https://www.litoralpetcenter.com.br/">
+  <meta property="og:locale" content="pt_BR">
+  <meta name="twitter:card" content="summary">
+
   <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com">
   <link rel="stylesheet" href="styles.css">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "VeterinaryCare",
+    "name": "Litoral Pet Center",
+    "image": "https://www.litoralpetcenter.com.br/assets/images/logo.png",
+    "telephone": "+5585996620853",
+    "url": "https://www.litoralpetcenter.com.br/",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Rua Lagoa do Parnamirzinho, 332 - Tabuba",
+      "addressLocality": "Caucaia",
+      "addressRegion": "CE",
+      "addressCountry": "BR"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": -3.63695,
+      "longitude": -38.7125665
+    },
+    "openingHoursSpecification": [
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": "Monday", "opens": "13:30", "closes": "17:30" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"], "opens": "08:30", "closes": "17:30" }
+    ],
+    "sameAs": ["https://www.instagram.com/litoralpetcenter/"],
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.8",
+      "reviewCount": "64"
+    }
+  }
+  </script>
 </head>
 <body>
-  <header>
-    <div class="container">
+  <a href="#main-content" class="skip-link">Pular para o conteúdo</a>
+
+  <header id="home">
+    <nav class="navbar" aria-label="Navegação principal">
+      <div class="container nav-container">
+        <a href="#home" class="nav-logo">
+          <img src="assets/images/logo.png" alt="" width="36" height="36">
+          <span>Litoral Pet Center</span>
+        </a>
+
+        <button type="button" class="nav-toggle" id="navToggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="navMenu">
+          <span></span><span></span><span></span>
+        </button>
+
+        <ul class="nav-menu" id="navMenu">
+          <li><a href="#hours">Horários</a></li>
+          <li><a href="#highlights">Serviços</a></li>
+          <li><a href="#reviews">Avaliações</a></li>
+          <li><a href="#contact">Contato</a></li>
+          <li>
+            <a href="https://wa.me/5585996620853" class="nav-cta" target="_blank" rel="noopener noreferrer">
+              <i class="fab fa-whatsapp" aria-hidden="true"></i> Agendar
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="hero-paws" aria-hidden="true">
+      <i class="fas fa-paw paw paw-1"></i>
+      <i class="fas fa-paw paw paw-2"></i>
+      <i class="fas fa-paw paw paw-3"></i>
+      <i class="fas fa-paw paw paw-4"></i>
+    </div>
+
+    <div class="container hero-content" id="main-content">
       <div class="profile-pic">
         <img src="assets/images/logo.png" alt="Litoral Pet Center">
       </div>
       <h1>Litoral Pet Center</h1>
       <p>Tudo que seu pet precisa em um só lugar</p>
-      
+
       <div class="cta-buttons">
-        <a href="https://wa.me/+5585996620853" class="btn whatsapp-btn" target="_blank">
-          <i class="fab fa-whatsapp"></i> WhatsApp Rápido
+        <a href="https://wa.me/5585996620853" class="btn whatsapp-btn" target="_blank" rel="noopener noreferrer">
+          <i class="fab fa-whatsapp" aria-hidden="true"></i> WhatsApp Rápido
         </a>
         <a href="tel:+5585996620853" class="btn phone-btn">
-          <i class="fas fa-phone"></i> Ligar Agora
+          <i class="fas fa-phone" aria-hidden="true"></i> Ligar Agora
         </a>
       </div>
     </div>
   </header>
 
+  <section id="hours">
+    <div class="container">
+      <h2>Horário de Funcionamento</h2>
+      <div class="hours-card reveal">
+        <span class="open-status" id="openStatus" aria-live="polite">Verificando horário...</span>
+        <ul class="hours-list">
+          <li><span>Segunda-feira</span><span>13h30 às 17h30</span></li>
+          <li><span>Terça a Sábado</span><span>08h30 às 17h30</span></li>
+          <li><span>Domingo</span><span>Fechado</span></li>
+        </ul>
+        <p class="hours-note">🔸 Atendimento com hora marcada.</p>
+      </div>
+    </div>
+  </section>
+
   <section id="highlights">
     <div class="container">
       <h2>Nossos Serviços</h2>
       <div class="highlights-grid">
-        <div class="highlight">
-          <i class="fas fa-stethoscope"></i>
+        <div class="highlight reveal">
+          <i class="fas fa-stethoscope" aria-hidden="true"></i>
           <h3>Consultas Clínicas e Domiciliares</h3>
           <p>Cuidamos do seu pet com todo o carinho e atenção que ele merece!</p>
         </div>
-        <div class="highlight">
-          <i class="fas fa-syringe"></i>
+        <div class="highlight reveal">
+          <i class="fas fa-syringe" aria-hidden="true"></i>
           <h3>Vacinação</h3>
           <p>Proteção em dia para garantir a saúde e felicidade do seu bichinho.</p>
         </div>
-        <div class="highlight">
-          <i class="fas fa-briefcase-medical"></i>
+        <div class="highlight reveal">
+          <i class="fas fa-briefcase-medical" aria-hidden="true"></i>
           <h3>Exames</h3>
           <p>Diagnóstico certeiro com exames laboratoriais e de imagem.</p>
         </div>
-        <div class="highlight">
-          <i class="fas fa-microscope"></i>
+        <div class="highlight reveal">
+          <i class="fas fa-microscope" aria-hidden="true"></i>
           <h3>Cirurgias</h3>
           <p>Procedimentos seguros, sempre com muito cuidado e amor pelo seu pet.</p>
         </div>
-        <div class="highlight">
-          <i class="fas fa-bath"></i>
+        <div class="highlight reveal">
+          <i class="fas fa-bath" aria-hidden="true"></i>
           <h3>Banho & Tosa com Táxi Pet</h3>
           <p>Higiene completa e cuidados especiais com serviço de transporte.</p>
         </div>
-        <div class="highlight">
-          <i class="fas fa-home"></i>
+        <div class="highlight reveal">
+          <i class="fas fa-home" aria-hidden="true"></i>
           <h3>Hotelzinho & Creche</h3>
           <p>Hospedagem aconchegante e creche para o dia todo.</p>
         </div>
-        <div class="highlight">
-          <i class="fas fa-shopping-bag"></i>
+        <div class="highlight reveal">
+          <i class="fas fa-shopping-bag" aria-hidden="true"></i>
           <h3>Pet Shop</h3>
           <p>Tudo o que seu pet precisa! Rações, brinquedos e acessórios.</p>
         </div>
-        <div class="highlight">
-          <i class="fas fa-passport"></i>
+        <div class="highlight reveal">
+          <i class="fas fa-passport" aria-hidden="true"></i>
           <h3>Atestado de Viagem</h3>
           <p>Emitimos atestados nacionais e internacionais para seu pet viajar.</p>
         </div>
@@ -84,113 +184,115 @@
       <h2>Avaliações Reais</h2>
       <div class="rating-badge">
         <span class="rating">4,8</span>
-        <div class="stars-small">★★★★★</div>
+        <div class="stars-small" aria-hidden="true">★★★★★</div>
         <span class="review-count">64 avaliações</span>
       </div>
     </div>
       <div class="reviews-container">
-        <div class="review-card">
-          <i class="fas fa-quote-right review-icon"></i>
+        <div class="review-card reveal">
+          <i class="fas fa-quote-right review-icon" aria-hidden="true"></i>
           <div class="review-header">
-            <div class="review-avatar">M</div>
+            <div class="review-avatar" aria-hidden="true">M</div>
             <div>
               <div class="review-author">Mayla Rodrigues</div>
               <div class="review-meta">3 avaliações</div>
             </div>
           </div>
-          <div class="stars">★★★★★</div>
+          <div class="stars" aria-label="5 de 5 estrelas">★★★★★</div>
           <div class="review-text">
             Tivemos uma ótima experiência com nossos bebês gatinhos que foram adotados e todo o tratamento foi feito no Litoral Pet Center. O atendimento é excelente desde as médicas veterinárias até a moça da recepção. Super recomendo a clínica e sem falar que sempre tiram dúvidas por WhatsApp também 👏🏼👏🏼👏🏼
           </div>
           <div class="review-date">2 anos atrás</div>
         </div>
 
-        <div class="review-card">
-          <i class="fas fa-quote-right review-icon"></i>
+        <div class="review-card reveal">
+          <i class="fas fa-quote-right review-icon" aria-hidden="true"></i>
           <div class="review-header">
-            <div class="review-avatar">M</div>
+            <div class="review-avatar" aria-hidden="true">M</div>
             <div>
               <div class="review-author">Marilda Catarin Afonso</div>
               <div class="review-meta">3 avaliações</div>
             </div>
           </div>
-          <div class="stars">★★★★★</div>
+          <div class="stars" aria-label="5 de 5 estrelas">★★★★★</div>
           <div class="review-text">
             Bons profissionais, excelente recepção, banho e tosa show. Me sinto em casa, as meninas são ótimas, melhor impossível!!! Minha pet é super bem tratada na creche, maravilhosa, ela ama ir pra creche!!!!!!
           </div>
           <div class="review-date">1 ano atrás</div>
         </div>
 
-        <div class="review-card">
-          <i class="fas fa-quote-right review-icon"></i>
+        <div class="review-card reveal">
+          <i class="fas fa-quote-right review-icon" aria-hidden="true"></i>
           <div class="review-header">
-            <div class="review-avatar">R</div>
+            <div class="review-avatar" aria-hidden="true">R</div>
             <div>
               <div class="review-author">Roseli</div>
               <div class="review-meta">1 avaliação</div>
             </div>
           </div>
-          <div class="stars">★★★★★</div>
+          <div class="stars" aria-label="5 de 5 estrelas">★★★★★</div>
           <div class="review-text">
             Ótimo atendimento, ótimas veterinárias, os nossos pets são tratados com muito amor e carinho, lá tem amor mesmo pelos animais, a minha cachorrinha foi adotada da rua, ela é cheia de traumas e medos mas lá ela se sente em casa, isso pra mim já diz tudo...
           </div>
           <div class="review-date">2 anos atrás</div>
         </div>
 
-        <div class="review-card">
-          <i class="fas fa-quote-right review-icon"></i>
+        <div class="review-card reveal">
+          <i class="fas fa-quote-right review-icon" aria-hidden="true"></i>
           <div class="review-header">
-            <div class="review-avatar">A</div>
+            <div class="review-avatar" aria-hidden="true">A</div>
             <div>
               <div class="review-author">Amanda Farias</div>
               <div class="review-meta">5 avaliações • 4 fotos</div>
             </div>
           </div>
-          <div class="stars">★★★★★</div>
+          <div class="stars" aria-label="5 de 5 estrelas">★★★★★</div>
           <div class="review-text">
             Acolhedor, é a palavra que descreve esse lugar. Eu e meu pet estamos muito satisfeitos com o trabalho deles, com a organização, a estrutura, e com certeza sou cliente fiel.
           </div>
           <div class="review-date">10 meses atrás</div>
         </div>
       </div>
-      <div class="google-review-btn">
-        <a href="https://search.google.com/local/writereview?placeid=ChIJ-bArM43NwAcRCaSbEYZg9Fc" 
-           class="btn google-btn" 
-           target="_blank">
-          <i class="fab fa-google"></i> Avaliar no Google
+      <div class="google-review-btn reveal">
+        <a href="https://search.google.com/local/writereview?placeid=ChIJ-bArM43NwAcRCaSbEYZg9Fc"
+           class="btn google-btn"
+           target="_blank" rel="noopener noreferrer">
+          <i class="fab fa-google" aria-hidden="true"></i> Avaliar no Google
         </a>
         <p>Ajude outros clientes compartilhando sua experiência</p>
       </div>
-    </div>  
+    </div>
   </section>
 
   <section id="contact">
     <div class="container">
       <h2>Contato</h2>
-      <ul class="contact-info">
-        <li><i class="fas fa-phone"></i> +55 (85) 99662-0853</li>
-        <li><i class="fas fa-map-marker-alt"></i> Rua Lagoa do Parnamirzinho, 332 - Tabuba, Caucaia - CE</li>
+      <ul class="contact-info reveal">
+        <li><i class="fas fa-phone" aria-hidden="true"></i> <a href="tel:+5585996620853">+55 (85) 99662-0853</a></li>
+        <li><i class="fas fa-map-marker-alt" aria-hidden="true"></i> Rua Lagoa do Parnamirzinho, 332 - Tabuba, Caucaia - CE</li>
       </ul>
-      <div class="social-links">
-        <a href="https://www.instagram.com/litoralpetcenter/" target="_blank"><i class="fab fa-instagram"></i></a>
-        <a href="https://wa.me/+5585996620853" target="_blank"><i class="fab fa-whatsapp"></i></a>
+      <div class="social-links reveal">
+        <a href="https://www.instagram.com/litoralpetcenter/" target="_blank" rel="noopener noreferrer" aria-label="Instagram do Litoral Pet Center"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+        <a href="https://wa.me/5585996620853" target="_blank" rel="noopener noreferrer" aria-label="Conversar no WhatsApp"><i class="fab fa-whatsapp" aria-hidden="true"></i></a>
       </div>
-      
-      <div class="map-container">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3981.454986647719!2d-38.7125665!3d-3.63695!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7c0cd8d332bb0f9%3A0x57f46086119ba409!2sLitoral%20Pet%20Center!5e0!3m2!1spt-BR!2sbr!4v1719061632825!5m2!1spt-BR!2sbr" 
-                width="100%" height="300" style="border:0; border-radius: 8px;" allowfullscreen="" loading="lazy"></iframe>
+
+      <div class="map-container reveal">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3981.454986647719!2d-38.7125665!3d-3.63695!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7c0cd8d332bb0f9%3A0x57f46086119ba409!2sLitoral%20Pet%20Center!5e0!3m2!1spt-BR!2sbr!4v1719061632825!5m2!1spt-BR!2sbr"
+                width="100%" height="300" style="border:0; border-radius: 8px;"
+                title="Localização do Litoral Pet Center no Google Maps"
+                allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
     </div>
   </section>
 
   <footer>
     <div class="container">
-      <p>&copy; 2025 Litoral Pet Center. Todos os direitos reservados.</p>
+      <p>&copy; <span id="year">2026</span> Litoral Pet Center. Todos os direitos reservados.</p>
     </div>
   </footer>
 
-  <a href="https://wa.me/5585996620853" class="float-whatsapp">
-    <i class="fab fa-whatsapp"></i>
+  <a href="https://wa.me/5585996620853" class="float-whatsapp" target="_blank" rel="noopener noreferrer" aria-label="Conversar no WhatsApp">
+    <i class="fab fa-whatsapp" aria-hidden="true"></i>
   </a>
 
   <script src="script.js"></script>
